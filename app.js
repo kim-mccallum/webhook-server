@@ -5,8 +5,10 @@ const cors = require("cors");
 
 // const HttpError = require("./models/http-error"); ////Use this for simple validation below
 
-//test gest and use environment variables
-// const { PORT } = require("./config");
+//use environment variables to hide email credentials. Eventually use nodemailer to email myself
+//also try to use the S123 API to create a report
+const { EMAIL_USER, EMAIL_PW } = require("./config");
+console.log(EMAIL_USER, EMAIL_PW);
 
 const app = express();
 
