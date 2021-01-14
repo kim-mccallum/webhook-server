@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.status(200).send(`Hello world! Welcome to a simple webhook server.`);
+  res.status(200).send(`Hello world! Welcome to a simple webhook server!`);
 });
 
 //the webhook route
